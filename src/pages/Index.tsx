@@ -19,7 +19,7 @@ const Index = () => {
         <img 
           src="https://web.archive.org/web/20091027004946/http://www.geocities.com/Area51/Zone/4416/const.gif"
           alt="Under Construction"
-          className="h-12"
+          className="h-12 animate-spin hover:animate-none"
         />
       </div>
 

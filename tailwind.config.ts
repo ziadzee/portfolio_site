@@ -77,12 +77,17 @@ export default {
           "60%": { color: "#00ff00" },
           "75%": { color: "#ffff00" },
           "90%": { color: "#ff0000" },
+        },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" }
         }
       },
       animation: {
         blink: "blink 1s step-start infinite",
         marquee: "marquee 25s linear infinite", // Changed from 15s to 25s
         rainbow: "rainbow 5s linear infinite",
+        spin: "spin 3s linear infinite"
       },
       boxShadow: {
         retro: "inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff",
