@@ -28,6 +28,9 @@ const Index = () => {
         <RetroButton onClick={() => document.getElementById("work")?.scrollIntoView()}>
           Work History
         </RetroButton>
+        <RetroButton onClick={() => document.getElementById("education")?.scrollIntoView()}>
+          Education
+        </RetroButton>
         <RetroButton onClick={() => document.getElementById("blog")?.scrollIntoView()}>
           Blog Posts
         </RetroButton>
