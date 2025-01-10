@@ -109,7 +109,7 @@ const Index = () => {
             grade="Grade: Distinction"
           />
           <EducationItem
-            institution="SOAS University of London"
+            institution="SOAS, University of London"
             degree="Bachelor of Science (B.Sc.), Economics"
             grade="Grade: Second Class Honours"
           />
