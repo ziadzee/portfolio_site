@@ -36,28 +36,46 @@ const Index = () => {
       <section id="work" className="mb-8 md:mb-12">
         <RetroWindow title="Work History">
           <WorkHistoryItem
-            company="Lovable Technology"
-            position="Senior Software Engineer"
-            period="Oct 2023 - Present"
-            description="Building AI-powered developer tools to help developers write better code faster. Working with React, TypeScript, and various AI technologies."
+            company="Banqora"
+            position="Co-founder and CPO"
+            period="Mar 2024 - Present"
+            description="Applied AI to automate post-trade processing for financial institutions. Backed by VCs, angels and industry experts."
           />
           <WorkHistoryItem
-            company="Lovable Technology"
-            position="Software Engineer"
-            period="Jan 2023 - Oct 2023"
-            description="Developed full-stack applications using React, TypeScript, and Node.js. Implemented AI-powered features and improved developer experience."
+            company="Antler"
+            position="Founder in Residence"
+            period="Feb 2024 - Apr 2024"
+            description="Antler is a global early-stage VC."
           />
           <WorkHistoryItem
-            company="Lovable Technology"
-            position="Junior Software Engineer"
-            period="Sep 2022 - Jan 2023"
-            description="Started as a junior developer working on web applications and learning modern development practices."
+            company="Channel 4"
+            position="Product Lead (Data Science)"
+            period="Sep 2022 - Aug 2023"
+            description="Scaling machine learning and data analytics to 29m users."
           />
           <WorkHistoryItem
-            company="Freelance"
-            position="Full Stack Developer"
-            period="2020 - 2022"
-            description="Worked on various freelance projects developing web applications and mobile apps using React, React Native, and Node.js."
+            company="Raft"
+            position="Product Lead (Machine Learning)"
+            period="Sep 2021 - Aug 2022"
+            description="Deploying NLP and computer vision to a 1,000-year old industry."
+          />
+          <WorkHistoryItem
+            company="Zilch"
+            position="Machine Learning Researcher"
+            period="May 2021 - Sep 2021"
+            description="Researched and built Zilch's first ML model into production (MSc thesis research)."
+          />
+          <WorkHistoryItem
+            company="ClearScore"
+            position="Product Manager"
+            period="Aug 2018 - Sep 2020"
+            description="Product Manager for Global Data Engineering. Previously Product Manager for User Engagement and Retention."
+          />
+          <WorkHistoryItem
+            company="Paperclip"
+            position="Co-Founder (Product)"
+            period="Jun 2014 - Sep 2017"
+            description="Peer-to-peer marketplace for renting items locally. Backed by Hayley Parsons (founder of GoCompare), David Buttress (co-founder of Just-Eat), and John Davis (former CFO of Financial Times, Yahoo, and Yell.com), along with the Development Bank of Wales."
           />
         </RetroWindow>
       </section>
