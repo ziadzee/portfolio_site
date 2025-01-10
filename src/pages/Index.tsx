@@ -27,6 +27,9 @@ const Index = () => {
         <RetroButton onClick={() => document.getElementById("blog")?.scrollIntoView()}>
           Blog Posts
         </RetroButton>
+        <RetroButton onClick={() => window.open("https://www.linkedin.com/in/ziadalziadi/", "_blank")}>
+          Contact Me
+        </RetroButton>
       </div>
 
       {/* Work History Section */}
