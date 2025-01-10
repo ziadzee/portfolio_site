@@ -14,14 +14,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-retro-beige p-4 md:p-6">
-      {/* Retro Computer Image */}
-      <div className="flex justify-center mb-4">
-        <img 
-          src="/lovable-uploads/f752980b-1d05-46c6-8434-df5a7e12fbe9.png"
-          alt="Retro Computer"
-          className="h-12 animate-spin hover:animate-none"
-        />
-      </div>
 
       {/* Hero Section */}
       <div className="text-center mb-6 md:mb-8">
@@ -40,9 +32,11 @@ const Index = () => {
           <span className="text-retro-purple">website</span>
           <span className="text-retro-teal">!</span>
         </h1>
-        <p className="text-retro-purple text-sm md:text-base">
-          * * * Welcome to my internet homepage! * * *
-        </p>
+        <div className="animate-marquee whitespace-nowrap overflow-hidden">
+          <p className="text-retro-purple inline-block text-sm md:text-base">
+            * * * Welcome to my internet homepage! * * *
+          </p>
+        </div>
       </div>
 
       {/* Navigation */}
