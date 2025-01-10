@@ -10,15 +10,34 @@ import { useState } from "react";
 const Index = () => {
   const isMobile = useIsMobile();
   const [isExpanded, setIsExpanded] = useState(false);
+  const [visitorCount] = useState(Math.floor(Math.random() * 9000) + 1000);
 
   return (
     <div className="min-h-screen bg-retro-beige p-4 md:p-6">
+      {/* Construction GIF */}
+      <div className="flex justify-center mb-4">
+        <img 
+          src="https://web.archive.org/web/20091027004946/http://www.geocities.com/Area51/Zone/4416/const.gif"
+          alt="Under Construction"
+          className="h-12"
+        />
+      </div>
+
       {/* Hero Section */}
       <div className="text-center mb-6 md:mb-8">
-        <h1 className="text-2xl md:text-4xl font-bold text-retro-navy mb-4">Welcome to My Personal Page!</h1>
+        <h1 className="text-2xl md:text-4xl font-bold text-retro-navy mb-4 blink">
+          <span className="text-retro-purple">W</span>
+          <span className="text-retro-teal">e</span>
+          <span className="text-retro-navy">l</span>
+          <span className="text-retro-purple">c</span>
+          <span className="text-retro-teal">o</span>
+          <span className="text-retro-navy">m</span>
+          <span className="text-retro-purple">e</span>
+          <span className="text-retro-teal">!</span>
+        </h1>
         <div className="animate-marquee whitespace-nowrap overflow-hidden">
           <p className="text-retro-purple inline-block text-sm md:text-base">
-            * * * Thanks for visiting my corner of the World Wide Web * * *
+            * * * Welcome to my awesome homepage! No Flash required! * * * Best viewed with Netscape Navigator 4.0 * * *
           </p>
         </div>
       </div>
@@ -41,7 +60,7 @@ const Index = () => {
 
       {/* Work History Section */}
       <section id="work" className="mb-8 md:mb-12">
-        <RetroWindow title="Work History">
+        <RetroWindow title="WORK.EXE">
           <Collapsible open={isExpanded} onOpenChange={setIsExpanded}>
             {/* First 4 items always visible */}
             <WorkHistoryItem
@@ -95,7 +114,7 @@ const Index = () => {
             <div className="mt-4 text-center">
               <CollapsibleTrigger asChild>
                 <RetroButton>
-                  {isExpanded ? "Show Less" : "Show More"}
+                  {isExpanded ? "< Less />" : "< More />"}
                 </RetroButton>
               </CollapsibleTrigger>
             </div>
@@ -105,7 +124,7 @@ const Index = () => {
 
       {/* Education Section */}
       <section id="education" className="mb-8 md:mb-12">
-        <RetroWindow title="Education">
+        <RetroWindow title="EDUCATION.BAT">
           <EducationItem
             institution="City, University of London"
             degree="Master of Science (M.Sc.), Data Science"
@@ -121,7 +140,7 @@ const Index = () => {
 
       {/* Blog Posts Section */}
       <section id="blog">
-        <RetroWindow title="Latest Blog Posts">
+        <RetroWindow title="BLOG.TXT">
           <BlogPost
             title="The Future of Web Development"
             date="April 15, 2024"
@@ -153,7 +172,7 @@ const Index = () => {
 
           {/* Visitor Counter */}
           <div className="inline-block bg-black text-[#00ff00] px-3 md:px-4 py-1 font-mono mx-2 text-xs md:text-sm">
-            Visitors: 000001337
+            Visitors: {String(visitorCount).padStart(8, '0')}
           </div>
 
           {/* W3C Badge */}

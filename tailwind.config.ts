@@ -69,10 +69,20 @@ export default {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        rainbow: {
+          "0%": { color: "#ff0000" },
+          "15%": { color: "#ff00ff" },
+          "30%": { color: "#0000ff" },
+          "45%": { color: "#00ffff" },
+          "60%": { color: "#00ff00" },
+          "75%": { color: "#ffff00" },
+          "90%": { color: "#ff0000" },
+        }
       },
       animation: {
         blink: "blink 1s step-start infinite",
         marquee: "marquee 15s linear infinite",
+        rainbow: "rainbow 5s linear infinite",
       },
       boxShadow: {
         retro: "inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff",
