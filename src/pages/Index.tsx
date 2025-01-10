@@ -147,6 +147,12 @@ const Index = () => {
       <section id="blog">
         <RetroWindow title="BLOG.TXT">
           <BlogPost
+            title="LLMs Aren't Products: The Challenge of Productionisation and Delivering Value"
+            date="September 2024"
+            excerpt="Let's face it: the technology scene is drunk on AI right now, and LLMs are the drink of choice. Organisations are..."
+            url="https://drive.google.com/file/d/14bH2aAVRVnvrOIWighhzAsBE4QII3Fkk/view"
+          />
+          <BlogPost
             title="How I saw the Brexit outcome two days prior using an app"
             date="Sep 17, 2020"
             excerpt="The pre-Brexit world of 2015 looked a lot different even though it was a mere five years ago. Fringe opinions on politics and society were…"
