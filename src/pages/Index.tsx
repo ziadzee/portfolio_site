@@ -23,22 +23,6 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Education Section */}
-      <section className="mb-8 md:mb-12">
-        <RetroWindow title="Education">
-          <EducationItem
-            institution="City, University of London"
-            degree="Master of Science (M.Sc.), Data Science"
-            grade="Grade: Distinction"
-          />
-          <EducationItem
-            institution="SOAS, University of London"
-            degree="Bachelor of Science (B.Sc.), Economics"
-            grade="Grade: Second Class Honours"
-          />
-        </RetroWindow>
-      </section>
-
       {/* Navigation */}
       <div className="flex flex-col md:flex-row justify-center gap-2 md:gap-4 mb-6 md:mb-8">
         <RetroButton onClick={() => document.getElementById("work")?.scrollIntoView()}>
@@ -53,8 +37,8 @@ const Index = () => {
       </div>
 
       {/* Work History Section */}
-      <section className="mb-8 md:mb-12">
-        <RetroWindow title="Experience">
+      <section id="work" className="mb-8 md:mb-12">
+        <RetroWindow title="Work History">
           <Collapsible open={isExpanded} onOpenChange={setIsExpanded}>
             {/* First 4 items always visible */}
             <WorkHistoryItem
@@ -113,6 +97,22 @@ const Index = () => {
               </CollapsibleTrigger>
             </div>
           </Collapsible>
+        </RetroWindow>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="mb-8 md:mb-12">
+        <RetroWindow title="Education">
+          <EducationItem
+            institution="City, University of London"
+            degree="Master of Science (M.Sc.), Data Science"
+            grade="Grade: Distinction"
+          />
+          <EducationItem
+            institution="SOAS, University of London"
+            degree="Bachelor of Science (B.Sc.), Economics"
+            grade="Grade: Second Class Honours"
+          />
         </RetroWindow>
       </section>
 
