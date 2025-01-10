@@ -5,7 +5,6 @@ import { EducationItem } from "@/components/EducationItem";
 import { RetroButton } from "@/components/RetroButton";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
 
 const Index = () => {
@@ -24,6 +23,22 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Education Section */}
+      <section className="mb-8 md:mb-12">
+        <RetroWindow title="Education">
+          <EducationItem
+            institution="City, University of London"
+            degree="Master of Science (M.Sc.), Data Science"
+            grade="Grade: Distinction"
+          />
+          <EducationItem
+            institution="SOAS, University of London"
+            degree="Bachelor of Science (B.Sc.), Economics"
+            grade="Grade: Second Class Honours"
+          />
+        </RetroWindow>
+      </section>
+
       {/* Navigation */}
       <div className="flex flex-col md:flex-row justify-center gap-2 md:gap-4 mb-6 md:mb-8">
         <RetroButton onClick={() => document.getElementById("work")?.scrollIntoView()}>
@@ -37,89 +52,67 @@ const Index = () => {
         </RetroButton>
       </div>
 
-      {/* Work History and Education Section */}
+      {/* Work History Section */}
       <section className="mb-8 md:mb-12">
         <RetroWindow title="Experience">
-          <Tabs defaultValue="work" className="w-full">
-            <TabsList className="w-full mb-4">
-              <TabsTrigger value="work" className="flex-1">Work History</TabsTrigger>
-              <TabsTrigger value="education" className="flex-1">Education</TabsTrigger>
-            </TabsList>
-            
-            <TabsContent value="work">
-              <Collapsible open={isExpanded} onOpenChange={setIsExpanded}>
-                {/* First 4 items always visible */}
-                <WorkHistoryItem
-                  company="Banqora"
-                  position="Co-founder and CPO"
-                  period="Mar 2024 - Present"
-                  description="Applied AI to automate post-trade processing for financial institutions. Backed by VCs, angels and industry experts."
-                />
-                <WorkHistoryItem
-                  company="Antler"
-                  position="Founder in Residence"
-                  period="Feb 2024 - Apr 2024"
-                  description="Antler is a global early-stage VC."
-                />
-                <WorkHistoryItem
-                  company="Channel 4"
-                  position="Product Lead (Data Science)"
-                  period="Sep 2022 - Aug 2023"
-                  description="Scaling machine learning and data analytics to 29m users."
-                />
-                <WorkHistoryItem
-                  company="Raft"
-                  position="Product Lead (Machine Learning)"
-                  period="Sep 2021 - Aug 2022"
-                  description="Deploying NLP and computer vision to a 1,000-year old industry."
-                />
+          <Collapsible open={isExpanded} onOpenChange={setIsExpanded}>
+            {/* First 4 items always visible */}
+            <WorkHistoryItem
+              company="Banqora"
+              position="Co-founder and CPO"
+              period="Mar 2024 - Present"
+              description="Applied AI to automate post-trade processing for financial institutions. Backed by VCs, angels and industry experts."
+            />
+            <WorkHistoryItem
+              company="Antler"
+              position="Founder in Residence"
+              period="Feb 2024 - Apr 2024"
+              description="Antler is a global early-stage VC."
+            />
+            <WorkHistoryItem
+              company="Channel 4"
+              position="Product Lead (Data Science)"
+              period="Sep 2022 - Aug 2023"
+              description="Scaling machine learning and data analytics to 29m users."
+            />
+            <WorkHistoryItem
+              company="Raft"
+              position="Product Lead (Machine Learning)"
+              period="Sep 2021 - Aug 2022"
+              description="Deploying NLP and computer vision to a 1,000-year old industry."
+            />
 
-                {/* Collapsible content */}
-                <CollapsibleContent>
-                  <WorkHistoryItem
-                    company="Zilch"
-                    position="Machine Learning Researcher"
-                    period="May 2021 - Sep 2021"
-                    description="Researched and built Zilch's first ML model into production (MSc thesis research)."
-                  />
-                  <WorkHistoryItem
-                    company="ClearScore"
-                    position="Product Manager"
-                    period="Aug 2018 - Sep 2020"
-                    description="Product Manager for Global Data Engineering. Previously Product Manager for User Engagement and Retention."
-                  />
-                  <WorkHistoryItem
-                    company="Paperclip"
-                    position="Co-Founder (Product)"
-                    period="Jun 2014 - Sep 2017"
-                    description="Peer-to-peer marketplace for renting items locally. Backed by Hayley Parsons (founder of GoCompare), David Buttress (co-founder of Just-Eat), and John Davis (former CFO of Financial Times, Yahoo, and Yell.com), along with the Development Bank of Wales."
-                  />
-                </CollapsibleContent>
-
-                {/* Show More/Less Button */}
-                <div className="mt-4 text-center">
-                  <CollapsibleTrigger asChild>
-                    <RetroButton>
-                      {isExpanded ? "Show Less" : "Show More"}
-                    </RetroButton>
-                  </CollapsibleTrigger>
-                </div>
-              </Collapsible>
-            </TabsContent>
-
-            <TabsContent value="education">
-              <EducationItem
-                institution="City, University of London"
-                degree="Master of Science (M.Sc.), Data Science"
-                grade="Grade: Distinction"
+            {/* Collapsible content */}
+            <CollapsibleContent>
+              <WorkHistoryItem
+                company="Zilch"
+                position="Machine Learning Researcher"
+                period="May 2021 - Sep 2021"
+                description="Researched and built Zilch's first ML model into production (MSc thesis research)."
               />
-              <EducationItem
-                institution="SOAS, University of London"
-                degree="Bachelor of Science (B.Sc.), Economics"
-                grade="Grade: Second Class Honours"
+              <WorkHistoryItem
+                company="ClearScore"
+                position="Product Manager"
+                period="Aug 2018 - Sep 2020"
+                description="Product Manager for Global Data Engineering. Previously Product Manager for User Engagement and Retention."
               />
-            </TabsContent>
-          </Tabs>
+              <WorkHistoryItem
+                company="Paperclip"
+                position="Co-Founder (Product)"
+                period="Jun 2014 - Sep 2017"
+                description="Peer-to-peer marketplace for renting items locally. Backed by Hayley Parsons (founder of GoCompare), David Buttress (co-founder of Just-Eat), and John Davis (former CFO of Financial Times, Yahoo, and Yell.com), along with the Development Bank of Wales."
+              />
+            </CollapsibleContent>
+
+            {/* Show More/Less Button */}
+            <div className="mt-4 text-center">
+              <CollapsibleTrigger asChild>
+                <RetroButton>
+                  {isExpanded ? "Show Less" : "Show More"}
+                </RetroButton>
+              </CollapsibleTrigger>
+            </div>
+          </Collapsible>
         </RetroWindow>
       </section>
 
