@@ -40,11 +40,9 @@ const Index = () => {
           <span className="text-retro-purple">website</span>
           <span className="text-retro-teal">!</span>
         </h1>
-        <div className="animate-marquee whitespace-nowrap overflow-hidden">
-          <p className="text-retro-purple inline-block text-sm md:text-base">
-            * * * Welcome to my internet homepage! * * *
-          </p>
-        </div>
+        <p className="text-retro-purple text-sm md:text-base">
+          * * * Welcome to my internet homepage! * * *
+        </p>
       </div>
 
       {/* Navigation */}
