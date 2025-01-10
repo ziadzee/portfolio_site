@@ -33,16 +33,28 @@ const Index = () => {
       <section id="work" className="mb-8 md:mb-12">
         <RetroWindow title="Work History">
           <WorkHistoryItem
-            company="TechCorp Solutions"
-            position="Senior Developer"
-            period="2020 - Present"
-            description="Leading development of cutting-edge web applications using modern technologies."
+            company="Lovable Technology"
+            position="Senior Software Engineer"
+            period="Oct 2023 - Present"
+            description="Building AI-powered developer tools to help developers write better code faster. Working with React, TypeScript, and various AI technologies."
           />
           <WorkHistoryItem
-            company="Digital Innovations"
-            position="Web Developer"
-            period="2018 - 2020"
-            description="Developed and maintained client websites and applications."
+            company="Lovable Technology"
+            position="Software Engineer"
+            period="Jan 2023 - Oct 2023"
+            description="Developed full-stack applications using React, TypeScript, and Node.js. Implemented AI-powered features and improved developer experience."
+          />
+          <WorkHistoryItem
+            company="Lovable Technology"
+            position="Junior Software Engineer"
+            period="Sep 2022 - Jan 2023"
+            description="Started as a junior developer working on web applications and learning modern development practices."
+          />
+          <WorkHistoryItem
+            company="Freelance"
+            position="Full Stack Developer"
+            period="2020 - 2022"
+            description="Worked on various freelance projects developing web applications and mobile apps using React, React Native, and Node.js."
           />
         </RetroWindow>
       </section>
