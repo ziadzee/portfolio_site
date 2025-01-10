@@ -33,6 +33,11 @@ const Index = () => {
           <span className="text-retro-teal">o</span>
           <span className="text-retro-navy">m</span>
           <span className="text-retro-purple">e</span>
+          <span className="text-retro-teal"> to </span>
+          <span className="text-retro-purple">Ziad </span>
+          <span className="text-retro-teal">Al-Ziadi's </span>
+          <span className="text-retro-navy">personal </span>
+          <span className="text-retro-purple">website</span>
           <span className="text-retro-teal">!</span>
         </h1>
         <div className="animate-marquee whitespace-nowrap overflow-hidden">
