@@ -1,6 +1,7 @@
 import { RetroWindow } from "@/components/RetroWindow";
 import { BlogPost } from "@/components/BlogPost";
 import { WorkHistoryItem } from "@/components/WorkHistoryItem";
+import { EducationItem } from "@/components/EducationItem";
 import { RetroButton } from "@/components/RetroButton";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -96,6 +97,22 @@ const Index = () => {
               </CollapsibleTrigger>
             </div>
           </Collapsible>
+        </RetroWindow>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="mb-8 md:mb-12">
+        <RetroWindow title="Education">
+          <EducationItem
+            institution="City, University of London"
+            degree="Master of Science (M.Sc.), Data Science"
+            grade="Grade: Distinction"
+          />
+          <EducationItem
+            institution="SOAS University of London"
+            degree="Bachelor of Science (B.Sc.), Economics"
+            grade="Grade: Second Class Honours"
+          />
         </RetroWindow>
       </section>
 
