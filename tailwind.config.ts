@@ -66,7 +66,7 @@ export default {
           "50%": { opacity: "0" },
         },
         marquee: {
-          "0%": { transform: "translateX(100%)" },
+          "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
         },
         rainbow: {
@@ -85,7 +85,7 @@ export default {
       },
       animation: {
         blink: "blink 1s step-start infinite",
-        marquee: "marquee 25s linear infinite", // Changed from 15s to 25s
+        marquee: "marquee 25s linear infinite",
         rainbow: "rainbow 5s linear infinite",
         spin: "spin 3s linear infinite"
       },
