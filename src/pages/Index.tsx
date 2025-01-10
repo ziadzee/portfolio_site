@@ -17,7 +17,7 @@ const Index = () => {
       {/* Retro Computer Image */}
       <div className="flex justify-center mb-4">
         <img 
-          src="https://web.archive.org/web/20091020115545/http://www.geocities.com/hk/computer.gif"
+          src="/lovable-uploads/f752980b-1d05-46c6-8434-df5a7e12fbe9.png"
           alt="Retro Computer"
           className="h-12 animate-spin hover:animate-none"
         />
