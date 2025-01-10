@@ -147,14 +147,22 @@ const Index = () => {
       <section id="blog">
         <RetroWindow title="BLOG.TXT">
           <BlogPost
-            title="The Future of Web Development"
-            date="April 15, 2024"
-            excerpt="Exploring upcoming trends in web development and what they mean for developers."
+            title="How I saw the Brexit outcome two days prior using an app"
+            date="Sep 17, 2020"
+            excerpt="The pre-Brexit world of 2015 looked a lot different even though it was a mere five years ago. Fringe opinions on politics and society were…"
+            url="https://medium.com/@ziadalzee/how-i-saw-the-brexit-outcome-two-days-prior-using-an-app-e3802f47c2a"
           />
           <BlogPost
-            title="My Journey in Tech"
-            date="April 1, 2024"
-            excerpt="A personal reflection on my career path and lessons learned along the way."
+            title="Technological Unemployment: automation and the purpose of life"
+            date="May 2, 2020"
+            excerpt="The relationship between technological advancement and unemployment has been at the centre of scrutiny and debate for well over a century…"
+            url="https://medium.com/@ziadalzee/technological-unemployment-automation-and-the-purpose-of-life-5247d138e017"
+          />
+          <BlogPost
+            title="The Demise of Capitalism and the Rise of the Collaborative Commons"
+            date="Jun 5, 2017"
+            excerpt="In the last decade or so, the lifeline of capitalism, profit, has been slowly but steadily dying in information and data-heavy industries…"
+            url="https://medium.com/@ziadalzee/the-demise-of-capitalism-and-the-rise-of-the-collaborative-commons-910d0638b272"
           />
         </RetroWindow>
       </section>
