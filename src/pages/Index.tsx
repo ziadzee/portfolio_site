@@ -14,11 +14,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-retro-beige p-4 md:p-6">
-      {/* Construction GIF */}
+      {/* Retro Computer Image */}
       <div className="flex justify-center mb-4">
         <img 
-          src="https://web.archive.org/web/20091027004946/http://www.geocities.com/Area51/Zone/4416/const.gif"
-          alt="Under Construction"
+          src="https://web.archive.org/web/20091020115545/http://www.geocities.com/hk/computer.gif"
+          alt="Retro Computer"
           className="h-12 animate-spin hover:animate-none"
         />
       </div>
