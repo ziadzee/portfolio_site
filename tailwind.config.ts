@@ -81,7 +81,7 @@ export default {
       },
       animation: {
         blink: "blink 1s step-start infinite",
-        marquee: "marquee 15s linear infinite",
+        marquee: "marquee 25s linear infinite", // Changed from 15s to 25s
         rainbow: "rainbow 5s linear infinite",
       },
       boxShadow: {

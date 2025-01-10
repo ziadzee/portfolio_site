@@ -42,7 +42,7 @@ const Index = () => {
         </h1>
         <div className="animate-marquee whitespace-nowrap overflow-hidden">
           <p className="text-retro-purple inline-block text-sm md:text-base">
-            * * * Welcome to my awesome homepage! No Flash required! * * * Best viewed with Netscape Navigator 4.0 * * *
+            * * * Welcome to my internet homepage! No Flash required! * * * Best viewed with Netscape Navigator 4.0 * * *
           </p>
         </div>
       </div>
