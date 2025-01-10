@@ -194,8 +194,9 @@ const Index = () => {
 
           {/* Copyright */}
           <div className="mt-4 space-y-2">
-            <p className="text-xs">This page is 100% Y2K compliant!</p>
-            <p className="text-sm md:text-base">© 2024 - Made with ❤️ using React</p>
+            <p className="text-xs">This site optimized for 800x600 resolution!</p>
+            <p className="text-sm md:text-base blink">* MIDI background music coming soon *</p>
+            <p className="text-xs">Last updated: April 2024 - Page Counter by WebCounter™</p>
             <p className="text-xs text-retro-purple">
               Resolution: {isMobile ? "320x480" : "800x600"} | 256 Colors
             </p>
