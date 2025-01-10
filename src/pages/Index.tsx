@@ -3,9 +3,12 @@ import { BlogPost } from "@/components/BlogPost";
 import { WorkHistoryItem } from "@/components/WorkHistoryItem";
 import { RetroButton } from "@/components/RetroButton";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { useState } from "react";
 
 const Index = () => {
   const isMobile = useIsMobile();
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div className="min-h-screen bg-retro-beige p-4 md:p-6">
@@ -35,48 +38,64 @@ const Index = () => {
       {/* Work History Section */}
       <section id="work" className="mb-8 md:mb-12">
         <RetroWindow title="Work History">
-          <WorkHistoryItem
-            company="Banqora"
-            position="Co-founder and CPO"
-            period="Mar 2024 - Present"
-            description="Applied AI to automate post-trade processing for financial institutions. Backed by VCs, angels and industry experts."
-          />
-          <WorkHistoryItem
-            company="Antler"
-            position="Founder in Residence"
-            period="Feb 2024 - Apr 2024"
-            description="Antler is a global early-stage VC."
-          />
-          <WorkHistoryItem
-            company="Channel 4"
-            position="Product Lead (Data Science)"
-            period="Sep 2022 - Aug 2023"
-            description="Scaling machine learning and data analytics to 29m users."
-          />
-          <WorkHistoryItem
-            company="Raft"
-            position="Product Lead (Machine Learning)"
-            period="Sep 2021 - Aug 2022"
-            description="Deploying NLP and computer vision to a 1,000-year old industry."
-          />
-          <WorkHistoryItem
-            company="Zilch"
-            position="Machine Learning Researcher"
-            period="May 2021 - Sep 2021"
-            description="Researched and built Zilch's first ML model into production (MSc thesis research)."
-          />
-          <WorkHistoryItem
-            company="ClearScore"
-            position="Product Manager"
-            period="Aug 2018 - Sep 2020"
-            description="Product Manager for Global Data Engineering. Previously Product Manager for User Engagement and Retention."
-          />
-          <WorkHistoryItem
-            company="Paperclip"
-            position="Co-Founder (Product)"
-            period="Jun 2014 - Sep 2017"
-            description="Peer-to-peer marketplace for renting items locally. Backed by Hayley Parsons (founder of GoCompare), David Buttress (co-founder of Just-Eat), and John Davis (former CFO of Financial Times, Yahoo, and Yell.com), along with the Development Bank of Wales."
-          />
+          <Collapsible open={isExpanded} onOpenChange={setIsExpanded}>
+            {/* First 4 items always visible */}
+            <WorkHistoryItem
+              company="Banqora"
+              position="Co-founder and CPO"
+              period="Mar 2024 - Present"
+              description="Applied AI to automate post-trade processing for financial institutions. Backed by VCs, angels and industry experts."
+            />
+            <WorkHistoryItem
+              company="Antler"
+              position="Founder in Residence"
+              period="Feb 2024 - Apr 2024"
+              description="Antler is a global early-stage VC."
+            />
+            <WorkHistoryItem
+              company="Channel 4"
+              position="Product Lead (Data Science)"
+              period="Sep 2022 - Aug 2023"
+              description="Scaling machine learning and data analytics to 29m users."
+            />
+            <WorkHistoryItem
+              company="Raft"
+              position="Product Lead (Machine Learning)"
+              period="Sep 2021 - Aug 2022"
+              description="Deploying NLP and computer vision to a 1,000-year old industry."
+            />
+
+            {/* Collapsible content */}
+            <CollapsibleContent>
+              <WorkHistoryItem
+                company="Zilch"
+                position="Machine Learning Researcher"
+                period="May 2021 - Sep 2021"
+                description="Researched and built Zilch's first ML model into production (MSc thesis research)."
+              />
+              <WorkHistoryItem
+                company="ClearScore"
+                position="Product Manager"
+                period="Aug 2018 - Sep 2020"
+                description="Product Manager for Global Data Engineering. Previously Product Manager for User Engagement and Retention."
+              />
+              <WorkHistoryItem
+                company="Paperclip"
+                position="Co-Founder (Product)"
+                period="Jun 2014 - Sep 2017"
+                description="Peer-to-peer marketplace for renting items locally. Backed by Hayley Parsons (founder of GoCompare), David Buttress (co-founder of Just-Eat), and John Davis (former CFO of Financial Times, Yahoo, and Yell.com), along with the Development Bank of Wales."
+              />
+            </CollapsibleContent>
+
+            {/* Show More/Less Button */}
+            <div className="mt-4 text-center">
+              <CollapsibleTrigger asChild>
+                <RetroButton>
+                  {isExpanded ? "Show Less" : "Show More"}
+                </RetroButton>
+              </CollapsibleTrigger>
+            </div>
+          </Collapsible>
         </RetroWindow>
       </section>
 
