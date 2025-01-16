@@ -17,6 +17,11 @@ const Index = () => {
 
       {/* Hero Section */}
       <div className="text-center mb-6 md:mb-8">
+        <img 
+          src="/lovable-uploads/4bf13be7-7a6c-47b5-a4b4-32994c2d0709.png"
+          alt="Retro Computer"
+          className="w-24 h-24 mx-auto mb-4 animate-spin"
+        />
         <h1 className="text-2xl md:text-4xl font-bold text-retro-navy mb-4 blink">
           <span className="text-retro-purple">W</span>
           <span className="text-retro-teal">e</span>
